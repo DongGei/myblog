@@ -527,6 +527,20 @@
 
 
 
+
+<style>
+    #index-video { z-index: -1; position: absolute; top: 0; left: 0; height: 100vh; width: 100%; object-fit: cover;}
+    @media only screen and (max-width: 760px) { #index-video { display: none;}}
+    @media only screen and (min-width: 760px) { .bg-cover { background-image: none!important;}}
+</style>
+<video id="index-video" autoplay loop muted>
+
+    <source src="https://www.xuegao-tzx.top/dongge/dzz.mp4">
+
+    <source src="//player.bilibili.com/player.html?aid=676546754&amp;bvid=BV1hU4y1g7Se&amp;cid=437801943&amp;page=1">
+
+</video>
+
 <main class="content">
 
     
@@ -668,7 +682,8 @@
                         <div class="summary block-with-text">
                             
                                 IO流一. Filefile:文件和目录路径名的抽象表示文件和目录是可以通过file封装成对象的  
-1. 构造方法123File(String pathname)//最简单的File(String parent, String child
+1. 构造方法 File(String pathname)&#x2F;&#x2F;最简单的
+File(String parent, Str
                             
                         </div>
                         <div class="publish-info">
