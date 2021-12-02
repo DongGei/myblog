@@ -503,6 +503,15 @@
                 </a>
                 
                 
+                <a href="/categories/Java/" title="Java: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            style="background-color: #F5EEF8;">Java
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
             </div>
         </div>
     </div>
@@ -545,7 +554,7 @@
                     color: '#3C4858'
                 }
             },
-            indicator: [{"name":"Markdown","max":2}],
+            indicator: [{"name":"Markdown","max":2},{"name":"Java","max":2}],
             nameGap: 5,
             center: ['50%','55%'],
             radius: '66%'
@@ -556,7 +565,7 @@
             itemStyle: {normal: {areaStyle: {type: 'default'}}},
             data : [
                 {
-                    value : [1],
+                    value : [1,1],
                     name : '文章分类数量'
                 }
             ]
@@ -642,6 +651,13 @@
             
             
             
+                
+            
+            
+                <span id="busuanzi_container_site_pv">
+                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;
+                    <span id="busuanzi_value_site_pv" class="white-color"></span>
+            </span>
             
             
                 <span id="busuanzi_container_site_uv">
@@ -656,7 +672,7 @@
             <br>
             
         </div>
-        <div class="col s12 m4 l4 social-link ">
+        <div class="col s12 m4 l4 social-link social-statis">
     <a href="https://github.com/DongGei" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
         <i class="fab fa-github"></i>
     </a>
@@ -884,6 +900,8 @@ $(function () {
     
     <script src="/libs/others/clicklove.js" async="async"></script>
     
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
     
 
     
