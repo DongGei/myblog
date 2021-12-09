@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="博客说明, java,Web,CSS JavaScript等">
-    <meta name="description" content="第一次使用hexo 搭建个人博客 本篇进行测试">
+    <meta name="keywords" content="吴恩达机器学习课程笔记, java,Web,CSS JavaScript等">
+    <meta name="description" content="吴恩达机器学习课程笔记">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>博客说明 | DongGei</title>
+    <title>吴恩达机器学习课程笔记 | DongGei</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -453,12 +453,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://gitee.com/dong2645981073/picture-summary/raw/master//image/image-20211201085525739.png')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/images/06.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">博客说明</h1>
+                    <h1 class="description center-align post-title">吴恩达机器学习课程笔记</h1>
                 </div>
             </div>
         </div>
@@ -468,10 +468,104 @@
 
 
 
-<main class="container content">
+<main class="post-container content">
 
     
-    <!-- 文章内容详情 -->
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
 <div id="artDetail">
     <div class="card">
         <div class="card-content article-info">
@@ -480,12 +574,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Typora/">
-                                <span class="chip bg-color">Typora</span>
-                            </a>
-                        
-                            <a href="/tags/Markdown/">
-                                <span class="chip bg-color">Markdown</span>
+                            <a href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/">
+                                <span class="chip bg-color">机器学习</span>
                             </a>
                         
                     </div>
@@ -496,8 +586,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/Markdown/" class="post-category">
-                                Markdown
+                            <a href="/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" class="post-category">
+                                机器学习
                             </a>
                         
                     </div>
@@ -509,14 +599,24 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-12-01
+                    2021-12-03
                 </div>
                 
 
                 
 
                 
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    749
+                </div>
+                
 
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    2 分
+                </div>
                 
 
                 
@@ -533,13 +633,100 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="hello-HEXO"><a href="#hello-HEXO" class="headerlink" title="hello HEXO"></a>hello HEXO</h2><p>第一次使用hexo 搭建个人博客 </p>
-<h2 id="test"><a href="#test" class="headerlink" title="test"></a>test</h2><p><img src="https://gitee.com/dong2645981073/picture-summary/raw/master//image/image-20211201084843190.png" alt="image-20211201084843190"></p>
-<p><strong>天空</strong></p>
-<p><em><u>天空</u></em></p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token comment">//天空</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p><img src="https://gitee.com/dong2645981073/picture-summary/raw/master//image/image-20211201085525739.png" alt="image-20211201085525739"></p>
+                <p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV164411b7dx?p=2&amp;spm_id_from=pageDriver">https://www.bilibili.com/video/BV164411b7dx?p=2&amp;spm_id_from=pageDriver</a></p>
+<h1 id="吴恩达机器学习课程笔记"><a href="#吴恩达机器学习课程笔记" class="headerlink" title="吴恩达机器学习课程笔记"></a>吴恩达机器学习课程笔记</h1><h2 id="什么是机器学习"><a href="#什么是机器学习" class="headerlink" title="什么是机器学习"></a>什么是机器学习</h2><p>Tom Mitchell在1997年提出的“ETP定义”：A computer program is said to learn from experience E with respect to some task T and some performance measure P, if its performance on T, as measured by P, improves with experience E.</p>
+<p>E：Experience，经验</p>
+<p>T：Task，任务</p>
+<p>P：Performance measure，性能测度</p>
+<p>从E来提高做T的P</p>
+<p><strong>重点：学习怎么使用正确机器学习算法 来完成任务</strong></p>
+<p>学习算法中主要的两类：</p>
+<ul>
+<li>supevised learning  监督学习 （教计算机学习）</li>
+<li>unsupervised learning           （让计算机自己学习）</li>
+</ul>
+<p>其他类型：</p>
+<ul>
+<li>reinforcement learmning  强化学习</li>
+<li>recommender systems  推荐系统</li>
+</ul>
+<h2 id="监督学习"><a href="#监督学习" class="headerlink" title="监督学习"></a>监督学习</h2><p>每个例子都有正确的答案</p>
+<ul>
+<li><p>分类问题</p>
+<p>告诉计算机什么是0 和 1  然后给一个数据  告诉你这个是是0还是1</p>
+</li>
+<li><p>回归问题</p>
+<p>eg：分析不同地区 卖房 可以卖到多少钱</p>
+</li>
+</ul>
+<h2 id="无监督学习"><a href="#无监督学习" class="headerlink" title="无监督学习"></a>无监督学习</h2><p>给一个数据集  它没有标签或者标签相同 其中之一 聚类算法  计算器自动分类 </p>
+<p>eg：谷歌新闻页面 组合新闻链接 </p>
+<p>eg：从录音中分离 不同的人声 或者分离伴奏和人声</p>
+<p>octave—科学计算软件</p>
+<h2 id="模型描述"><a href="#模型描述" class="headerlink" title="模型描述"></a>模型描述</h2><ul>
+<li>一个训练集</li>
+<li>训练数</li>
+<li>特征 给的值</li>
+<li>目标值</li>
+</ul>
+<p>预测房价的例子  ：</p>
+<p><img src="https://gitee.com/dong2645981073/picture-summary/raw/master//image/image-20211108210406083.png" alt="image-20211108210406083"></p>
+<p>预测房价的例子  ：监督学习—线性回归</p>
+<p>一行就是一个训练样本</p>
+<p>x^1 y^1   这里1 指的是索引</p>
+<p>得出的结果 就是叫假设函数</p>
+<h2 id="代价函数"><a href="#代价函数" class="headerlink" title="代价函数"></a>代价函数</h2><p><img src="https://gitee.com/dong2645981073/picture-summary/raw/master//image/20211108214222.png" alt="20211108214222"></p>
+<p>假设函数，参数，代价函数，优化目标：</p>
+<p><img src="https://gitee.com/dong2645981073/picture-summary/raw/master//image/image-20211108222305107.png" alt="image-20211108222305107"></p>
+<ol>
+<li>简化了房价的例子的参数 只有一个斜率参数θ1</li>
+</ol>
+<p><img src="https://gitee.com/dong2645981073/picture-summary/raw/master//image/image-20211108221850671.png" alt="image-20211108221850671"></p>
+<ol start="2">
+<li>两个参数 都有：</li>
+</ol>
+<p><img src="https://gitee.com/dong2645981073/picture-summary/raw/master//image/image-20211108223437244.png" alt="image-20211108223437244"></p>
+<p><img src="https://gitee.com/dong2645981073/picture-summary/raw/master//image/image-20211108223446980.png" alt="image-20211108223446980"></p>
+<p>（图A）一个参数 和两个参数的 代价函数</p>
+<p><img src="https://gitee.com/dong2645981073/picture-summary/raw/master//image/image-20211108223454288.png" alt="image-20211108223454288"></p>
+<p>代价函数画成  等高线图后的样子  一个点 代表一个h（x） 假设函数</p>
+<p>椭圆的“同心点” 拟合程度较高</p>
+<p>我们需要软件来帮助我们找到最低点和对应的θ1和θ0</p>
+<h2 id="梯度下降法"><a href="#梯度下降法" class="headerlink" title="梯度下降法"></a>梯度下降法</h2><ol>
+<li>梯度下降法来最小化任意函数：</li>
+</ol>
+<p><img src="https://gitee.com/dong2645981073/picture-summary/raw/master//image/image-20211108225451754.png" alt="image-20211108225451754"></p>
+<p>不同的起始点 找到的最低点可能不同（一般不是这样 应该是一个<strong>凸</strong>函数  像上面图一）</p>
+<p><img src="https://gitee.com/dong2645981073/picture-summary/raw/master//image/image-20211109172655125.png" alt="image-20211109172655125"></p>
+<ol start="2">
+<li>梯度下降算法</li>
+</ol>
+<p><img src="https://gitee.com/dong2645981073/picture-summary/raw/master//image/image-20211109172327978.png" alt="image-20211109172327978"></p>
+<p>“正确的梯度下降要同步更新 右侧是不正确的”</p>
+<p><img src="https://gitee.com/dong2645981073/picture-summary/raw/master//image/image-20211109175015782.png" alt="image-20211109175015782"></p>
+<p><img src="https://gitee.com/dong2645981073/picture-summary/raw/master//image/image-20211109175310119.png" alt="image-20211109175310119"></p>
+<ol start="3">
+<li>α是控制下降速率  </li>
+</ol>
+<ul>
+<li><p>α小的话 下降比较</p>
+</li>
+<li><p>α大的话  可能导致找不到最小点或者发散</p>
+</li>
+</ul>
+<p>算法中的导数项 通俗地说是开控制下降的方向</p>
+<p>导数项 是慢慢减小的 最后是0  所以梯度下降将自动采取较小的幅度</p>
+<p>整合模型和算法下·</p>
+<ol start="4">
+<li><p><img src="https://gitee.com/dong2645981073/picture-summary/raw/master//image/image-20211109183608749.png" alt="image-20211109183608749"></p>
+<p>右的线性回归模型 带入梯度算法中  导数项和代价函数如下图</p>
+</li>
+</ol>
+<p><img src="https://gitee.com/dong2645981073/picture-summary/raw/master//image/image-20211109183657678.png" alt="image-20211109183657678"></p>
+<p>不断重复下面</p>
+<p><img src="https://gitee.com/dong2645981073/picture-summary/raw/master//image/image-20211109185810332.png" alt="image-20211109185810332"></p>
+<p><em>上面的方法是全览了整个训练集 的梯度下降 所以它又叫”batch“算法</em></p>
+<p><em>(还有没有全览了整个训练集的算法）</em></p>
 
                 
             </div>
@@ -566,7 +753,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://www.donggei.top/2021/12/01/hello-world/">https://www.donggei.top/2021/12/01/hello-world/</a>
+                    <a href="https://www.donggei.top/2021/12/03/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/">https://www.donggei.top/2021/12/03/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -604,12 +791,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Typora/">
-                                    <span class="chip bg-color">Typora</span>
-                                </a>
-                            
-                                <a href="/tags/Markdown/">
-                                    <span class="chip bg-color">Markdown</span>
+                                <a href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/">
+                                    <span class="chip bg-color">机器学习</span>
                                 </a>
                             
                         </div>
@@ -1051,6 +1234,54 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
+                <a href="/2021/12/03/python%E5%9F%BA%E7%A1%80/">
+                    <div class="card-image">
+                        
+                        <img src="/images/01.jpg" class="responsive-img" alt="python入门">
+                        
+                        <span class="card-title">python入门</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            python入门
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-12-03
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/python%E5%85%A5%E9%97%A8/" class="post-category">
+                                    python入门
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/python%E5%85%A5%E9%97%A8/">
+                        <span class="chip bg-color">python入门</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
                 <a href="/2021/12/02/javaSE%E2%80%94%E6%B3%A8%E8%A7%A3%E5%92%8C%E5%8F%8D%E5%B0%84/">
                     <div class="card-image">
                         
@@ -1066,9 +1297,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-12-02
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-02
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -1090,59 +1321,6 @@
                     
                     <a href="/tags/%E6%B3%A8%E8%A7%A3%E5%92%8C%E5%8F%8D%E5%B0%84/">
                         <span class="chip bg-color">注解和反射</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
-            </div>
-            <div class="card">
-                <a href="/2021/12/01/hello-world/">
-                    <div class="card-image">
-                        
-                        <img src="https://gitee.com/dong2645981073/picture-summary/raw/master//image/image-20211201085525739.png" class="responsive-img" alt="博客说明">
-                        
-                        <span class="card-title">博客说明</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            第一次使用hexo 搭建个人博客 本篇进行测试
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-12-01
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/Markdown/" class="post-category">
-                                    Markdown
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/Typora/">
-                        <span class="chip bg-color">Typora</span>
-                    </a>
-                    
-                    <a href="/tags/Markdown/">
-                        <span class="chip bg-color">Markdown</span>
                     </a>
                     
                 </div>
@@ -1174,6 +1352,100 @@
 
 <script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
 
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4, h5'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4, h5').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
 
     
 
@@ -1250,6 +1522,9 @@
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
             |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
             <br>
+            
+                &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                        class="white-color">19.8k</span>
             
             
             
