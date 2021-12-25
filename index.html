@@ -165,6 +165,16 @@
 
 
 
+   <style>
+    body{
+       background-image: url(https://gitee.com/dong2645981073/picture-summary/raw/master//image/image-20211225001153139.png);
+       background-repeat:no-repeat;
+       background-size: 100% 100%;
+       background-attachment:fixed;
+    }
+</style>
+
+
 
 
  <div id="loading-container">
@@ -187,8 +197,6 @@
                     
                     <span class="logo-span">DongGei</span>
                 </a>
-                <div id="weather"></div>
-                <script src="https://cdn.jsdelivr.net/gh/w4j1e/blog@master/js/tqa.js"></script>
             </div>
             
 
@@ -386,8 +394,6 @@
 
 
         </div>
-
-
         
             <style>
     .nav-transparent .github-corner {
@@ -525,10 +531,13 @@
 
 
 <script>
-    // 每天切换 banner 图.  Switch banner image every day.
-    var bannerUrl = "/medias/banner/" + new Date().getDay() + '.jpg';
-    $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
+    $('.bg-cover').css('background-image', 'url()');
 </script>
+
+
+
+
+
 
 
 
@@ -591,7 +600,7 @@
         
             
             <div class="carousel-item amber white-text carousel-post bg-cover"
-                 style="background-image: url('/images/03.jpg');">
+                 style="background-image: url('https://gitee.com/dong2645981073/picture-summary/raw/master//image/image-20211201085525739.png');">
                 <div class="container">
                     <div class="row">
                         <div class="col s10 offset-s1">
@@ -651,7 +660,7 @@
         let autoCarousel = function () {
             carouselIntervalId = setInterval(function () {
                 coverSlider.carousel('next');
-            }, 5000);
+            }, 8000);
         };
         autoCarousel();
         
@@ -717,81 +726,11 @@
                     
 
                     
-                        <link rel="stylesheet" href="/libs/dplayer/DPlayer.min.css">
-<div class="video-player">
-    
-    <div class="title center-align">
-        <i class="fas fa-video-camera"></i>&nbsp;&nbsp;精彩视频
-    </div>
-    
-    <div class="row">
-		
-			<iframe src='//player.bilibili.com/player.html?aid=676546754&bvid=BV1hU4y1g7Se&cid=437801943&page=1' scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" align="middle"  style="height: 400px;" width="100%"> </iframe>
-		
-    </div>
-</div>
-
-<script src="/libs/dplayer/DPlayer.min.js"></script>
-<script>
-    $(function () {
-        new DPlayer({
-            container: document.getElementById('dplayer'),
-            autoplay: 'false' === 'true',
-            theme: '#42b983',
-            loop: 'false' === 'true',
-            lang: 'zh-CN' === 'zh-CN' ? 'zh-cn' : 'en',
-            preload: 'auto',
-            volume: Number('0.7'),
-            video: {
-                url: '',
-                pic: '',
-                thumbnails: ''
-            }
-        });
-    });
-</script>
-
-                    
 
                     
                     <div id="recommend-sections" class="recommend">
                         
 
-
-
-
-
-<div class="title"><i class="far fa-thumbs-up"></i>&nbsp;&nbsp;推荐文章</div>
-
-<div class="row">
-
-    
-    
-    <div class="col s12" >
-        
-             <div class="post-card" style="background-image: url('https://gitee.com/dong2645981073/picture-summary/raw/master//image/image-20211201085525739.png')">
-        
-            <div class="post-body">
-                <div class="post-categories">
-                    
-                        
-                            <a href="/categories/Markdown/" class="category">Markdown</a>
-                        
-                    
-                </div>
-                <a href="/2021/12/05/%E5%8D%9A%E5%AE%A2%E8%AF%B4%E6%98%8E/">
-                    <h3 class="post-title">博客说明</h3>
-                </a>
-                <p class="post-description">第一次使用hexo搭建个人博客 由于期末考试暂时停止生成同步</p>
-                <a href="/2021/12/05/%E5%8D%9A%E5%AE%A2%E8%AF%B4%E6%98%8E/" class="read-more btn waves-effect waves-light" style="background: linear-gradient(to right, #FF5E3A 0%, #FF2A68 100%)" target="_blank">
-                    <i class="icon far fa-eye fa-fw"></i>阅读更多
-                </a>
-            </div>
-        </div>
-    </div>
-    
-
-</div>
 
 
                     </div>
@@ -1334,7 +1273,7 @@
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">26.4k</span>
+                        class="white-color">26.3k</span>
             
             
             
@@ -1610,8 +1549,6 @@ $(function () {
 
     
 
-    
-    <script type="text/javascript" src="/libs/background/ribbon-dynamic.js" async="async"></script>
     
 
     
