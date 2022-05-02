@@ -612,7 +612,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-12-09
+                    2022-05-01
                 </div>
                 
 
@@ -681,41 +681,41 @@
 <li>目标值</li>
 </ul>
 <p>预测房价的例子  ：</p>
-<p><img src="https://gitee.com/dong2645981073/picture-summary/raw/master//image/image-20211108210406083.png" alt="image-20211108210406083"></p>
+<p><img src="https://s2.loli.net/2022/05/01/frtiWCEP9XdFYbO.png" alt="image-20211108210406083"></p>
 <p>预测房价的例子  ：监督学习—线性回归</p>
 <p>一行就是一个训练样本</p>
 <p>x^1 y^1   这里1 指的是索引</p>
 <p>得出的结果 就是叫假设函数</p>
-<h2 id="代价函数"><a href="#代价函数" class="headerlink" title="代价函数"></a>代价函数</h2><p><img src="https://gitee.com/dong2645981073/picture-summary/raw/master//image/20211108214222.png" alt="20211108214222"></p>
+<h2 id="代价函数"><a href="#代价函数" class="headerlink" title="代价函数"></a>代价函数</h2><p><img src="C:\Users\DONG\AppData\Roaming\Typora\typora-user-images\20211108214222.png" alt="20211108214222"></p>
 <p>假设函数，参数，代价函数，优化目标：</p>
-<p><img src="https://gitee.com/dong2645981073/picture-summary/raw/master//image/image-20211108222305107.png" alt="image-20211108222305107"></p>
+<p><img src="C:\Users\DONG\AppData\Roaming\Typora\typora-user-images\image-20211108222305107.png" alt="image-20211108222305107"></p>
 <ol>
 <li>简化了房价的例子的参数 只有一个斜率参数θ1</li>
 </ol>
-<p><img src="https://gitee.com/dong2645981073/picture-summary/raw/master//image/image-20211108221850671.png" alt="image-20211108221850671"></p>
+<p><img src="https://s2.loli.net/2022/05/01/e97PzILhmr1QH6t.png" alt="image-20211108221850671"></p>
 <ol start="2">
 <li>两个参数 都有：</li>
 </ol>
-<p><img src="https://gitee.com/dong2645981073/picture-summary/raw/master//image/image-20211108223437244.png" alt="image-20211108223437244"></p>
-<p><img src="https://gitee.com/dong2645981073/picture-summary/raw/master//image/image-20211108223446980.png" alt="image-20211108223446980"></p>
+<p><img src="https://s2.loli.net/2022/05/01/V7MPIQaLJ6hkwgT.png" alt="image-20211108223437244"></p>
+<p><img src="https://s2.loli.net/2022/05/01/CF5teL4bMfgWoDn.png" alt="image-20211108223446980"></p>
 <p>（图A）一个参数 和两个参数的 代价函数</p>
-<p><img src="https://gitee.com/dong2645981073/picture-summary/raw/master//image/image-20211108223454288.png" alt="image-20211108223454288"></p>
+<p><img src="https://s2.loli.net/2022/05/01/reU58oNMIl3mCui.png" alt="image-20211108223454288"></p>
 <p>代价函数画成  等高线图后的样子  一个点 代表一个h（x） 假设函数</p>
 <p>椭圆的“同心点” 拟合程度较高</p>
 <p>我们需要软件来帮助我们找到最低点和对应的θ1和θ0</p>
 <h2 id="梯度下降法"><a href="#梯度下降法" class="headerlink" title="梯度下降法"></a>梯度下降法</h2><ol>
 <li>梯度下降法来最小化任意函数：</li>
 </ol>
-<p><img src="https://gitee.com/dong2645981073/picture-summary/raw/master//image/image-20211108225451754.png" alt="image-20211108225451754"></p>
+<p><img src="https://s2.loli.net/2022/05/01/aSFYrKHqp9zyDsN.png" alt="image-20211108225451754"></p>
 <p>不同的起始点 找到的最低点可能不同（一般不是这样 应该是一个<strong>凸</strong>函数  像上面图一）</p>
-<p><img src="https://gitee.com/dong2645981073/picture-summary/raw/master//image/image-20211109172655125.png" alt="image-20211109172655125"></p>
+<p><img src="https://s2.loli.net/2022/05/01/LgWfzwPemZ1y3bJ.png" alt="image-20211109172655125"></p>
 <ol start="2">
 <li>梯度下降算法</li>
 </ol>
-<p><img src="https://gitee.com/dong2645981073/picture-summary/raw/master//image/image-20211109172327978.png" alt="image-20211109172327978"></p>
+<p><img src="https://s2.loli.net/2022/05/01/bMk9lz7PDiORSoG.png" alt="image-20211109172327978"></p>
 <p>“正确的梯度下降要同步更新 右侧是不正确的”</p>
-<p><img src="https://gitee.com/dong2645981073/picture-summary/raw/master//image/image-20211109175015782.png" alt="image-20211109175015782"></p>
-<p><img src="https://gitee.com/dong2645981073/picture-summary/raw/master//image/image-20211109175310119.png" alt="image-20211109175310119"></p>
+<p><img src="https://s2.loli.net/2022/05/01/WIApqvmsYbh5zTV.png" alt="image-20211109175015782"></p>
+<p><img src="https://s2.loli.net/2022/05/01/NDLk5cgdlZvK4SV.png" alt="image-20211109175310119"></p>
 <ol start="3">
 <li>α是控制下降速率  </li>
 </ol>
@@ -729,13 +729,13 @@
 <p>导数项 是慢慢减小的 最后是0  所以梯度下降将自动采取较小的幅度</p>
 <p>整合模型和算法下·</p>
 <ol start="4">
-<li><p><img src="https://gitee.com/dong2645981073/picture-summary/raw/master//image/image-20211109183608749.png" alt="image-20211109183608749"></p>
+<li><p><img src="https://s2.loli.net/2022/05/01/DIyBbfXFCS1Oel4.png" alt="image-20211109183608749"></p>
 <p>右的线性回归模型 带入梯度算法中  导数项和代价函数如下图</p>
 </li>
 </ol>
-<p><img src="https://gitee.com/dong2645981073/picture-summary/raw/master//image/image-20211109183657678.png" alt="image-20211109183657678"></p>
+<p><img src="https://s2.loli.net/2022/05/01/r9spU4uiFekQKzw.png" alt="image-20211109183657678"></p>
 <p>不断重复下面</p>
-<p><img src="https://gitee.com/dong2645981073/picture-summary/raw/master//image/image-20211109185810332.png" alt="image-20211109185810332"></p>
+<p><img src="C:\Users\DONG\AppData\Roaming\Typora\typora-user-images\image-20211109185810332.png" alt="image-20211109185810332"></p>
 <p><em>上面的方法是全览了整个训练集 的梯度下降 所以它又叫”batch“算法</em></p>
 <p><em>(还有没有全览了整个训练集的算法）</em></p>
 
@@ -1535,7 +1535,7 @@
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">58k</span>
+                        class="white-color">60.6k</span>
             
             
             
